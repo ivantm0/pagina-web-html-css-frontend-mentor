@@ -9,15 +9,22 @@
 <body>
     <header class="container__navbar">
         <img src="./images/logo.svg" alt="logo">
-        <nav>
+        <nav class="ocultar">
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Projects</a>
             <a class="contact" href="#">CONTACT</a>
         </nav>
+        <img src="./images/icon-hamburger.svg" id="boton__hamburguesa" alt="">
     </header>
 
     <section class="container__header">
+        <nav class="menu" id="menu">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a class="contact" href="#">CONTACT</a>
+        </nav>
         <div class="centrar__flecha__imagen">
             <h1>WE ARE CREATIVES</h1>
             <img src="./images/icon-arrow-down.svg" alt="Flecha abajo">
@@ -32,16 +39,16 @@
         </div>
         <div>
             <picture>
-                <source srcset="./images/desktop/image-transform.jpg" media="(min-width: 1440px)">
-                <source srcset="./images/mobile/image-transform.jpg" width="100%" media="(min-width: 375px)">
-                <img src="./images/mobile/image-transform.jpg" alt="">
+  
+                <source srcset="./images/desktop/image-transform.jpg" width="100%" media="(min-width: 375px)">
+                <img src="./images/mobile/image-transform.jpg" width="100%" height="100%" alt="">
             </picture>
         </div>
         <div>
             <picture>
-                <source srcset="./images/desktop/image-stand-out.jpg" media="(min-width: 1440px)">
-                <source srcset="./images/mobile/image-stand-out.jpg" width="100%" media="(min-width: 375px)">
-                <img src="./images/mobile/image-stand-out.jpg" alt="">
+
+                <source srcset="./images/desktop/image-stand-out.jpg" width="100%" media="(min-width: 375px)">
+                <img src="./images/mobile/image-stand-out.jpg" width="100%" height="100%" alt="">
             </picture>
         </div>
         <div class="cuadrados">
@@ -120,5 +127,6 @@
             <img src="./images/icon-pinterest.svg" alt="">
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

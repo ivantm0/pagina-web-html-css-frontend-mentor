@@ -47,8 +47,16 @@ body{
     border-radius: 30px;
     color: black;
   }
+  
+  #boton__hamburguesa{
+    visibility: hidden;
+  }
 
 /*header*/
+.menu{
+    visibility: hidden;
+}
+
 .container__header{
     width: 100%;
     height: 700px;
@@ -277,5 +285,38 @@ body{
     }
     .centrar__cuadrados{
         top: 60%;
+        text-align: center;
+        padding: 0 15%;
+    }
+
+    .container__header{
+        position: relative;
+    }
+    .menu{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        visibility: hidden;
+    }
+    .menu a{
+        color:grey
+    }
+    .contact{
+        background-color: yellow;
+    }
+    #boton__hamburguesa{
+        visibility: visible;
+    }
+    .ocultar{
+        visibility: hidden;
+    }
+    .mostrar{
+        visibility: visible;
     }
 }
