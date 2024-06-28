@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "parrafo";
+    src: url('./Barlow-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url('./Fraunces_72pt-Black.ttf');
+}
+
+body{
+    font-size: 18px;
+    font-family: 'parrafo';
+}
+
+:root {
+    --color-azul: #3EBFFF;
+    --color-verde: #90D4C5;
+    --color-verde-oscuro: #2A7362;
+  }
+
+  /*Navbar*/
+  .container__navbar{
+    background-color: var(--color-azul);
+    display: flex;
+    padding: 25px 5%;
+    justify-content: space-between;
+  }
+
+  nav a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+  }
+
+  .contact{
+    background-color: white;
+    font-family: 'titulo';
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: black;
+  }
+
+/*header*/
+.container__header{
+    width: 100%;
+    height: 700px;
+    background: url(/images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.centrar__flecha__imagen{
+    display: flex;
+    flex-direction: column;
+    gap: 106px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.centrar__flecha__imagen h1{
+    font-family: 'titulo';
+    font-size: 48px;
+    color: white;
+    letter-spacing: 10px;
+    margin-top: 140px;
+}
+
+/*Cuadrícula*/
+.container__cuadricula{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadrados{
+    width: 720px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.imagen__cereza{
+    position: relative;
+    width: 720px;
+    height: 600px;
+    background: url(/images/desktop/image-graphic-design.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen__naranja{
+    position: relative;
+    width: 720px;
+    height: 600px;
+    background: url(/images/desktop/image-photography.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.centrar__cuadrados{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25%;
+    top: 65%;
+}
+
+.centrar__cuadrados p:first-child{
+    margin-bottom: 30px;
+}
+
+.centrar__cuadrados p:last-child{
+    text-align: center;
+}
+
+.titulo{
+    font-family: 'titulo';
+    font-size: 34px;
+
+}
+
+.boton{
+    font-family: 'titulo';
+}
+
+.texto__central{
+    margin: 40px 0;
+    color: grey;
+}
+
+.titulo2{
+    font-family: 'titulo';
+    color: var(--color-verde-oscuro);
+    font-size: 25px;
+}
+
+.texto2{
+    color: var(--color-verde-oscuro);
+}
+
+/*Testimonios*/
+.container__testimonios{
+    width: 100%;
+    height: 776px;
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__testimonio__individual{
+    display: flex;
+    text-align: center;
+    padding: 0 16%;
+}
+
+.container__testimonio__individual div{
+    padding: 0 2%;
+}
+
+.container__testimonio__individual img{
+    border-radius: 50%;
+    width: 25%;
+    margin-bottom: 70px;
+}
+
+.titulo__testimonios{
+    font-family: 'titulo';
+    letter-spacing: 7px;
+    color: grey;
+}
+
+.nombre{
+    font-family: 'titulo';
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.profesion{
+    color: grey;
+    font-size: 14px;
+}
+
+/*Contenedor últimas imágenes */
+.container__imagenes__2{
+    display: flex;
+}
+
+.container__imagenes__2 img{
+    width: 25%;
+}
+
+/*footer*/
+.container__footer{
+    width: 100%;
+    height: 347px;
+    background-color: var(--color-verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__enlaces__footer{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    color: var(--color-verde-oscuro);
+}
+
+.container__redes__footer{
+    display: flex;
+    gap: 28px;
+}
