@@ -31,10 +31,18 @@
             <p class="boton">LEARN MORE</p>
         </div>
         <div>
-            <img src="./images/desktop/image-transform.jpg" alt="">
+            <picture>
+                <source srcset="./images/desktop/image-transform.jpg" media="(min-width: 1440px)">
+                <source srcset="./images/mobile/image-transform.jpg" width="100%" media="(min-width: 375px)">
+                <img src="./images/mobile/image-transform.jpg" alt="">
+            </picture>
         </div>
         <div>
-            <img src="./images/desktop/image-stand-out.jpg" alt="">
+            <picture>
+                <source srcset="./images/desktop/image-stand-out.jpg" media="(min-width: 1440px)">
+                <source srcset="./images/mobile/image-stand-out.jpg" width="100%" media="(min-width: 375px)">
+                <img src="./images/mobile/image-stand-out.jpg" alt="">
+            </picture>
         </div>
         <div class="cuadrados">
             <h1 class="titulo">Stand out to the right audience</h1>
@@ -64,7 +72,7 @@
                 <p class="nombre">Emily R.</p>
                 <p class="profesion">Marketing Director</p>
             </div>
-            <div>
+            <div class="separacion">
                 <img src="./images/image-thomas.jpg" alt="Imagen Thomas">
                 <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
                 <p class="nombre">Thomas S.</p>
@@ -80,10 +88,22 @@
     </section>
         
     <section class="container__imagenes__2">
-        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Botellas de leche">
-        <img src="./images/desktop/image-gallery-orange.jpg" alt="Naranja">
-        <img src="./images/desktop/image-gallery-cone.jpg" alt="Cono helado">
-        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Azucarillos">
+        <picture>
+            <source srcset="./images/desktop/image-gallery-milkbottles.jpg" width="100%" media="(min-width: 375px)">
+            <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="">
+        </picture>
+        <picture>
+            <source srcset="./images/desktop/image-gallery-orange.jpg" width="100%" media="(min-width: 375px)">
+            <img src="./images/mobile/image-gallery-orange.jpg" alt="">
+        </picture>
+        <picture>
+            <source srcset="./images/desktop/image-gallery-cone.jpg" width="100%" media="(min-width: 375px)">
+            <img src="./images/mobile/image-gallery-cone.jpg" alt="">
+        </picture>
+        <picture>
+            <source srcset="./images/desktop/image-gallery-sugarcubes.jpg" width="100%" media="(min-width: 375px)">
+            <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        </picture>
     </section>
 
     <footer class="container__footer">
